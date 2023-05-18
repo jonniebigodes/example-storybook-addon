@@ -17,15 +17,15 @@ export const Tool = memo(function MyAddonSelector() {
 
   useEffect(() => {
     api.setAddonShortcut(ADDON_ID, {
-      label: "Toggle Measure [O]",
-      defaultShortcut: ["O"],
-      actionName: "outline",
+      label: "Toggle Addon [I]",
+      defaultShortcut: ["I"],
+      actionName: "myaddon",
       showInMenu: false,
       action: toggleMyTool,
     });
   }, [toggleMyTool, api]);
 
-  return (
+  /* return (
     <IconButton
       key={TOOL_ID}
       active={isActive}
@@ -34,5 +34,38 @@ export const Tool = memo(function MyAddonSelector() {
     >
       <Icons icon="lightning" />
     </IconButton>
+  ); */
+  return (
+    <IconButton
+      key={TOOL_ID}
+      active={isActive}
+      title="Apply outlines to the preview"
+      onClick={toggleMyTool}
+    >
+      <Icons icon="lightning" />
+    </IconButton>
   );
 });
+
+/* export const Tool = () => {
+  const [{ myAddon }, updateGlobals] = useGlobals();
+
+  const toggleMyTool = useCallback(
+    () =>
+      updateGlobals({
+        myAddon: !myAddon,
+      }),
+    [myAddon]
+  );
+
+  return (
+    <IconButton
+      key={TOOL_ID}
+      active={myAddon}
+      title="Apply outlines to the preview"
+      onClick={toggleMyTool}
+    >
+      <Icons icon="lightning" />
+    </IconButton>
+  );
+}; */

@@ -1,8 +1,7 @@
 import { addons, types } from "@storybook/manager-api";
-import { ADDON_ID, TOOL_ID, PANEL_ID, TAB_ID } from "./constants";
+/* import { ADDON_ID, TOOL_ID, PANEL_ID, TAB_ID } from "./constants"; */
+import { ADDON_ID, TOOL_ID } from "./constants";
 import { Tool } from "./Tool";
-import { Panel } from "./Panel";
-import { Tab } from "./Tab";
 
 /**
  * Note: if you want to use JSX in this file, rename it to `manager.tsx`
@@ -19,7 +18,7 @@ addons.register(ADDON_ID, () => {
     render: Tool,
   });
 
-  // Register the panel
+  /* // Register the panel
   addons.add(PANEL_ID, {
     type: types.PANEL,
     title: "My addon",
@@ -36,5 +35,5 @@ addons.register(ADDON_ID, () => {
     //👇 Shows the Tab UI element in myaddon view mode
     match: ({ viewMode }) => viewMode === "myaddon",
     render: Tab,
-  });
+  }); */
 });
