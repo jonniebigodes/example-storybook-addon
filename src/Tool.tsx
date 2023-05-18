@@ -5,6 +5,7 @@ import { ADDON_ID, PARAM_KEY, TOOL_ID } from "./constants";
 
 export const Tool = memo(function MyAddonSelector() {
   const [globals, updateGlobals] = useGlobals();
+
   const api = useStorybookApi();
 
   const isActive = [true, "true"].includes(globals[PARAM_KEY]);
@@ -17,8 +18,8 @@ export const Tool = memo(function MyAddonSelector() {
 
   useEffect(() => {
     api.setAddonShortcut(ADDON_ID, {
-      label: "Toggle Addon [I]",
-      defaultShortcut: ["I"],
+      label: "Toggle Addon [8]",
+      defaultShortcut: ["8"],
       actionName: "myaddon",
       showInMenu: false,
       action: toggleMyTool,
