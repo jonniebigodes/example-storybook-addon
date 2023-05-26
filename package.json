@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-test-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sample addon to showcase how to build a Storybook addon",
   "keywords": [
     "storybook-addons",
