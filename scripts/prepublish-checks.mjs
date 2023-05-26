@@ -5,7 +5,9 @@ const boxen = require("boxen");
 const dedent = require("dedent");
 
 const name = packageJson.name;
-const displayName = packageJson.storybook.displayName;
+//const displayName = packageJson.storybook.displayName;
+
+const displayName = "storybook-addon-test-ts";
 
 let exitCode = 0;
 $.verbose = false;
