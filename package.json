@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "description": "Sample addon to showcase how to build a Storybook addon",
   "keywords": [
-    "storybook-addons", "example", "storybook-addons"
+    "storybook-addons",
+    "example",
+    "storybook-addons"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/sample-addon"
+    "url": "https://github.com/jonniebigodes/example-storybook-addon"
   },
   "author": "your-username <your-username@mail.com>",
   "license": "MIT",
@@ -98,12 +100,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "storybook": {
-    "displayName": "addon-test-ts",
-    "supportedFrameworks": [
-      "react", "vue", "angular", "web-components", "ember", "html", "svelte", "preact", "react-native"
-    ],
-    "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   }
 }
